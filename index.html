@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zEditor</title>
+    <style>
+        #text-area {
+            background: #272822;
+            padding: 10px;
+            height: auto;
+            min-height: 100px;
+            color: #e5e5e5;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="control-area">
+        <button data-style='italic' onclick="changeStyle(this.dataset.style)">斜体</button>
+        <button data-style='bold' onclick="changeStyle(this.dataset.style)">粗体</button>
+        <button data-style='underline' onclick="changeStyle(this.dataset.style)">下划线</button>
+        <button data-style='strikeThrough' onclick="changeStyle(this.dataset.style)">删除线</button>
+    </div>
+    <div id="text-area" contenteditable>
+        <h1>欢迎使用zEditor</h1>
+        <p>
+            没有任何依赖，纯粹原生JS+HTML实现一个文本编辑器。想要看更多技术文章，欢迎访问http://tuobaye.com，或者给我的这个github项目https://github.com/tuobaye0711/zEditor点个star哦，谢谢啦~</p>
+    </div>
+</div>
+<script>
+    const changeStyle = (style) => {
+        if (style === 'h1' || style === 'h1' || style === 'p') {
+            document.execCommand('formatBlock', false, '<' + style + '>');
+        } else {
+            document.execCommand(style, false, null);
+        }
+    }
+</script>
+</body>
+</html>
