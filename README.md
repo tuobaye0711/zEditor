@@ -8,5 +8,7 @@
 该项目特点：
 
 - 仅需一个文件(index.html)
-- 不超过100行代码
+- 核心代码不超过10行
 - 无依赖
+
+[demo](http://tuobaye.com/demo/zEditor/index)
