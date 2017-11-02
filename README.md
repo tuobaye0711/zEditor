@@ -11,4 +11,8 @@
 - 1行js核心代码实现所有功能
 - 无依赖
 
+预览图
+
+[zEditor](img/zEditor.png)
+
 [demo](http://tuobaye.com/demo/zEditor/index)
