@@ -13,6 +13,6 @@
 
 预览图
 
-[zEditor](img/zEditor.png)
+![zEditor](img/zEditor.png)
 
 [demo](http://tuobaye.com/demo/zEditor/index)
